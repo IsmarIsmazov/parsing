@@ -21,7 +21,8 @@ if response.status_code == 200:
             print(f'Заказ: {title}')
             print(f'Ссылка: {complete_urls}')
             if ' бот' in title:
-                print(f'\n{title}\n')
+                print(f'\n{title}')
+                print(f'Ссылка: {complete_urls}\n')
         else:
             print("No <a> tag found inside the task__title div.")
 
